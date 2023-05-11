@@ -1,0 +1,7 @@
+{
+  "_fv": 39,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"1048\" y=\"663\"><field name=\"trigger\">player_completes_advancement</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"advancement_isequalto\"><field name=\"achievement\">end/kill_dragon</field></block></value><statement name=\"DO0\"><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">revolution has begun</field></block></value><next><block type=\"world_data_logic_setgamerule\"><field name=\"gamerulesboolean\">CUSTOM:Revolt</field><value name=\"gameruleValue\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></statement></block></next></block></xml>"
+  }
+}

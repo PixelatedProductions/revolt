@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "revoltmod:copper_armor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.lightning_fast.title"
+    },
+    "description": {
+      "translate": "advancements.lightning_fast.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lightning_fast": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "revoltmod:revolt_root"
+}

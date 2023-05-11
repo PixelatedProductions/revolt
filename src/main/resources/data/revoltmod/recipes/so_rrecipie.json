@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "revoltmod:shard_of_magic"
+    },
+    {
+      "item": "revoltmod:shard_of_defense"
+    },
+    {
+      "item": "revoltmod:shard_of_strength"
+    }
+  ],
+  "result": {
+    "item": "revoltmod:shard_of_revolution",
+    "count": 1
+  }
+}

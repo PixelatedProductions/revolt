@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "3 5",
+    "67 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "revoltmod:void_fragment"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "revoltmod:void_fragment"
+    },
+    "6": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "revoltmod:void_fragment"
+    }
+  },
+  "result": {
+    "item": "revoltmod:void_bow",
+    "count": 1
+  }
+}

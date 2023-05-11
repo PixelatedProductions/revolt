@@ -1,0 +1,890 @@
+{
+  "mod_elements": [
+    {
+      "name": "ShardOfStrength",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_of_strength",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/ShardOfStrengthItem.java",
+          "src/main/resources/assets/revoltmod/models/item/shard_of_strength.json"
+        ]
+      }
+    },
+    {
+      "name": "Netheriteingot",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheriteingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/netherite_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "Revolt",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolt",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "Revolution",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolution",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/RevolutionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "advancement",
+            "type": "advancement"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Commandingrevolution",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandingrevolution",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/CommandingrevolutionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Togglerevolt",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "togglerevolt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/command/TogglerevoltCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperArmor",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/copper_armor_chestplate.json",
+          "src/main/resources/assets/revoltmod/models/item/copper_armor_helmet.json",
+          "src/main/resources/assets/revoltmod/models/item/copper_armor_boots.json",
+          "src/main/resources/assets/revoltmod/models/item/copper_armor_leggings.json",
+          "src/main/java/net/mcreator/revoltmod/item/CopperArmorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/copper_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/copper_armor_body_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/copper_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/copper_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Copperarmorsetbonus",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmorsetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/CopperarmorsetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightningFast",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_fast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/advancements/lightning_fast.json"
+        ]
+      }
+    },
+    {
+      "name": "AssOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ass_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/AssOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShardOfMagic",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_of_magic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/shard_of_magic.json",
+          "src/main/java/net/mcreator/revoltmod/item/ShardOfMagicItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShardOfDefense",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_of_defense",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/shard_of_defense.json",
+          "src/main/java/net/mcreator/revoltmod/item/ShardOfDefenseItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShardOfRevolution",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_of_revolution",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/ShardOfRevolutionItem.java",
+          "src/main/resources/assets/revoltmod/models/item/shard_of_revolution.json"
+        ]
+      }
+    },
+    {
+      "name": "SORrecipie",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "so_rrecipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/so_rrecipie.json"
+        ]
+      }
+    },
+    {
+      "name": "Enderdragonloottable",
+      "type": "loottable",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderdragonloottable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/entities/ender_dragon.json"
+        ]
+      }
+    },
+    {
+      "name": "RevoltRoot",
+      "type": "achievement",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolt_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/advancements/revolt_root.json"
+        ]
+      }
+    },
+    {
+      "name": "Revoltingcreeper",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revoltingcreeper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/client/renderer/RevoltingcreeperRenderer.java",
+          "src/main/java/net/mcreator/revoltmod/entity/RevoltingcreeperEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DarkDolphin",
+      "type": "animatedentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_dolphin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/entity/DarkDolphinEntity.java",
+          "src/main/java/net/mcreator/revoltmod/client/renderer/DarkDolphinRenderer.java",
+          "src/main/java/net/mcreator/revoltmod/entity/model/DarkDolphinModel.java"
+        ]
+      }
+    },
+    {
+      "name": "Veinshreeder",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "veinshreeder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/veinshreeder.json",
+          "src/main/java/net/mcreator/revoltmod/item/VeinshreederItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneSpear",
+      "type": "rangeditem",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/client/renderer/StoneSpearRenderer.java",
+          "src/main/resources/assets/revoltmod/models/item/stone_spear.json",
+          "src/main/java/net/mcreator/revoltmod/item/StoneSpearItem.java",
+          "src/main/java/net/mcreator/revoltmod/entity/StoneSpearEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SPR",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/spr.json"
+        ]
+      }
+    },
+    {
+      "name": "GolemBoss",
+      "type": "animatedentity",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golem_boss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/entity/GolemBossEntity.java",
+          "src/main/java/net/mcreator/revoltmod/entity/model/GolemBossModel.java",
+          "src/main/java/net/mcreator/revoltmod/client/renderer/GolemBossRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "IronPlate",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/IronPlateItem.java",
+          "src/main/resources/assets/revoltmod/models/item/iron_plate.json"
+        ]
+      }
+    },
+    {
+      "name": "IronHelmetRecipie",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_helmet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_helmet.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "GolemLT",
+      "type": "loottable",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golem_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/loot_tables/entities/golem_boss.json"
+        ]
+      }
+    },
+    {
+      "name": "Icr",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_chestplate.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "SR",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/shield.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "Ilr",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ilr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_leggings.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "IBR",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ibr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_boots.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "ISR",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "isr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_sword.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "IAR",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_axe.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "IshR",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ish_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_shovel.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "IPR",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ipr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_pickaxe.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "IHR",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ihr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/iron_hoe.json"
+        ]
+      },
+      "path": "~/vanilla changes"
+    },
+    {
+      "name": "GolemsAwakening",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golems_awakening",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/GolemsAwakeningItem.java",
+          "src/main/resources/assets/revoltmod/models/item/golems_awakening.json"
+        ]
+      }
+    },
+    {
+      "name": "GolemsAwakeningRightclicked",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golems_awakening_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/GolemsAwakeningRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GAR",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/golems_awakening.json"
+        ]
+      }
+    },
+    {
+      "name": "ShadowspecBar",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shadowspec_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/ShadowspecBarItem.java",
+          "src/main/resources/assets/revoltmod/models/item/shadowspec_bar.json"
+        ]
+      }
+    },
+    {
+      "name": "Forgecrafting",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forgecrafting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/procedures/ForgecraftingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ForgeGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/client/gui/ForgeGUIScreen.java",
+          "src/main/java/net/mcreator/revoltmod/network/ForgeGUIButtonMessage.java",
+          "src/main/java/net/mcreator/revoltmod/network/ForgeGUISlotMessage.java",
+          "src/main/java/net/mcreator/revoltmod/world/inventory/ForgeGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Forge",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/block/entity/ForgeBlockEntity.java",
+          "src/main/resources/assets/revoltmod/models/item/forge.json",
+          "src/main/java/net/mcreator/revoltmod/block/ForgeBlock.java",
+          "src/main/resources/assets/revoltmod/models/block/forge.json",
+          "src/main/resources/assets/revoltmod/blockstates/forge.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidFragment",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/VoidFragmentItem.java",
+          "src/main/resources/assets/revoltmod/models/item/void_fragment.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidScythe",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_scythe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/item/VoidScytheItem.java",
+          "src/main/resources/assets/revoltmod/models/item/void_scythe.json"
+        ]
+      }
+    },
+    {
+      "name": "VSR",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vsr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/vsr.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidSword",
+      "type": "tool",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/void_sword.json",
+          "src/main/java/net/mcreator/revoltmod/item/VoidSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidBow",
+      "type": "rangeditem",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revoltmod/models/item/void_bow.json",
+          "src/main/java/net/mcreator/revoltmod/item/VoidBowItem.java",
+          "src/main/java/net/mcreator/revoltmod/entity/VoidBowEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "VKR",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vkr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/vkr.json"
+        ]
+      }
+    },
+    {
+      "name": "VBW",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vbw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revoltmod/recipes/vbr.json"
+        ]
+      }
+    },
+    {
+      "name": "Gaminggun",
+      "type": "rangeditem",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gaminggun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/entity/GaminggunEntity.java",
+          "src/main/resources/assets/revoltmod/models/item/gaminggun.json",
+          "src/main/java/net/mcreator/revoltmod/item/GaminggunItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Corruptedocelot",
+      "type": "livingentity",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptedocelot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revoltmod/entity/CorruptedocelotEntity.java",
+          "src/main/java/net/mcreator/revoltmod/client/renderer/CorruptedocelotRenderer.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.revoltmod.revoltingcreeper_spawn_egg": "Revolting Creeper Spawn Egg",
+      "gamerule.revolt.description": "if the overworld revolution has started",
+      "item.revoltmod.copper_armor_leggings": "Copper Leggings",
+      "item.revoltmod.void_fragment": "Void Fragment",
+      "item.revoltmod.shard_of_defense": "Shard Of Defense",
+      "item.revoltmod.veinshreeder": "Veinshreeder",
+      "advancements.revolt_root.title": "Revolt",
+      "gamerule.revolt": "revolt",
+      "item.revoltmod.dark_dolphin_spawn_egg": "Dark Dolphin Spawn Egg",
+      "item.revoltmod.copper_armor_boots": "Copper Boots",
+      "advancements.lightning_fast.descr": "Use copper armor and its speed ability.",
+      "item.revoltmod.shard_of_strength": "Shard Of Strength",
+      "entity.revoltmod.golem_boss": "Golem",
+      "advancements.lightning_fast.title": "Lightning Fast",
+      "item.revoltmod.golems_awakening": "Golems Awakening",
+      "entity.revoltmod.revoltingcreeper": "Revolting Creeper",
+      "entity.revoltmod.dark_dolphin": "Dark Dolphin",
+      "item.revoltmod.shadowspec_bar": "Shadowspec Bar",
+      "block.revoltmod.forge": "Forge",
+      "item.revoltmod.void_bow": "Void Bow",
+      "gui.revoltmod.forge_gui.button_forge": "forge",
+      "item.revoltmod.void_scythe": "Void Scythe",
+      "item.revoltmod.copper_armor_chestplate": "Copper Chestplate",
+      "item.revoltmod.shard_of_revolution": "Shard Of Revolution",
+      "item.revoltmod.stone_spear": "Stone Spear",
+      "item.revoltmod.corruptedocelot_spawn_egg": "Corrupted Ocelot Spawn Egg",
+      "item.revoltmod.shard_of_magic": "Shard Of Magic",
+      "entity.revoltmod.corruptedocelot": "Corrupted Ocelot",
+      "item.revoltmod.void_sword": "Void Sword",
+      "item.revoltmod.gaminggun": "Gaminggun",
+      "item.revoltmod.copper_armor_helmet": "Copper Helmet",
+      "item.revoltmod.golem_boss_spawn_egg": "Golem Spawn Egg",
+      "advancements.revolt_root.descr": "Be prepared for the revolution...",
+      "item.revoltmod.iron_plate": "Iron Plate"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "vanilla changes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "revoltmod",
+    "modName": "revolt",
+    "version": "1.0.0",
+    "author": "natha, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "portinglib",
+      "geckolib"
+    ],
+    "currentGenerator": "fabric-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.revoltmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

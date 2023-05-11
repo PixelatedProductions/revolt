@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "revoltmod:void_fragment"
+    },
+    "1": {
+      "item": "revoltmod:void_fragment"
+    },
+    "2": {
+      "item": "revoltmod:void_fragment"
+    },
+    "3": {
+      "item": "revoltmod:void_fragment"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "revoltmod:void_scythe",
+    "count": 1
+  }
+}

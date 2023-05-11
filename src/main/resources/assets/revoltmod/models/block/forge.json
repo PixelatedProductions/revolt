@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "revoltmod:blocks/robot",
+    "up": "revoltmod:blocks/robot",
+    "north": "revoltmod:blocks/robot",
+    "east": "revoltmod:blocks/robot",
+    "south": "revoltmod:blocks/robot",
+    "west": "revoltmod:blocks/robot",
+    "particle": "revoltmod:blocks/robot"
+  }
+}
